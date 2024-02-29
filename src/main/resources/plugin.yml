@@ -1,0 +1,7 @@
+name: "NS_RealLifeReloaded"
+description: Just Real Life implementation in Minecraft
+author: Xayanix
+main: net.xayanix.nssv.reallife.RealLife
+version: 1.0 Alpha
+depend: [NS_Core, HolographicDisplays]
+softdepend: [NS_LaglessTab, Citizens, WorldEdit, WorldGuard, PermissionsEx, CrackShot, Essentials, QualityArmory, QualityArmoryVehicles, ProtocolLib]

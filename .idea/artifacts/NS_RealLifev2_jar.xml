@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="NS_RealLifev2:jar">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="NS_RealLifev2.jar">
+      <element id="module-output" name="NS_RealLifev2" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xyz/upperlevel/spigot/book/spigot-book-api/1.0/spigot-book-api-1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/mongodb/bson/3.0.4/bson-3.0.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-async/3.0.4/mongodb-driver-async-3.0.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-core/3.0.4/mongodb-driver-core-3.0.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/json/json/20140107/json-20140107.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

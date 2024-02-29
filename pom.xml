@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>NS_RealLifev2</groupId>
+    <artifactId>NS_RealLifev2</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <!-- FAWE repository -->
+        <repository>
+            <id>fawe-repo</id>
+            <url>http://ci.athion.net/job/FastAsyncWorldEdit/ws/mvn/</url>
+        </repository>
+        <repository>
+            <id>chestshop-repo</id>
+            <url>https://repo.minebench.de/</url>
+        </repository>
+        <repository>
+            <id>sk89q-maven</id>
+            <url>http://maven.sk89q.com/repo</url>
+        </repository>
+        <repository>
+            <id>sk89q-snapshots</id>
+            <url>http://maven.sk89q.com/artifactory/repo</url>
+            <releases>
+                <enabled>true</enabled> <!-- releases enabled: this specific repository also hosts release versions -->
+            </releases>
+            <snapshots>
+                <enabled>true</enabled> <!-- snapshots enabled: we declare a SNAPSHOT repository because we need to download a SNAPSHOT dependency -->
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <!-- FAWE API -->
+        <dependency>
+            <groupId>com.boydti</groupId>
+            <artifactId>fawe-api</artifactId>
+            <version>latest</version>
+        </dependency>
+        <dependency>
+            <groupId>xyz.upperlevel.spigot.book</groupId>
+            <artifactId>spigot-book-api</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.16</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.acrobot.chestshop</groupId>
+            <artifactId>chestshop</artifactId>
+            <version>3.8.13-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongodb-driver-async</artifactId>
+            <version>3.0.4</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20140107</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.0</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
